@@ -1,5 +1,5 @@
 ARG BUILD_VERSION
-FROM homeassistant/intel-nuc-homeassistant:$BUILD_VERSION
+FROM homeassistant/amd64-homeassistant:$BUILD_VERSION
 
 ARG BUILD_VERSION
 RUN apk add --no-cache \
