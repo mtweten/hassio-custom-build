@@ -1,6 +1,7 @@
 ARG BUILD_VERSION
 FROM homeassistant/intel-nuc-homeassistant:$BUILD_VERSION
 
+ARG BUILD_VERSION
 RUN apk add --no-cache \
         bluez-libs eudev-libs libxslt libxml2 \
     && apk add --no-cache --virtual .build-dependencies \
